@@ -1,0 +1,126 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+main{
+    display:flex;
+}
+
+main div{
+    flex:1 200px;
+    text-align: center
+}
+
+#wrapper{
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+
+
+.eye{
+    position: absolute;
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.eye.left{
+    top: 281px;
+    left: 169px;
+}
+
+.eye.right{
+    position: absolute;
+    top: 295px;
+    left: 333px;
+}
+
+.eye img.white{
+    filter: blur(4px) brightness(84%);
+    width: 30px;
+}
+
+.left .black{
+    position: absolute;
+    top:6px;
+    left:6px;
+}
+.right .black{
+    position: absolute;
+    left:6px;
+    top:7px;
+}
+
+#food{
+    cursor: pointer;
+    width:250px;
+    height:250px;
+    z-index:1;
+}
+
+.mouse{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 471px;
+    left: 139px;
+}
+
+.description {
+    padding: 19px;
+    margin: 20px;
+    border: 2px solid #2f2d2d;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 2px 2px rgba(23, 22, 22, 0.05);
+    color: #151313;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
